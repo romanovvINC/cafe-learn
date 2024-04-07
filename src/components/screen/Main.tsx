@@ -3,7 +3,7 @@ import Header from "./Header/Header";
 
 const Main = () => (
     <>
-        <Header />
+        <h1>Content</h1>
     </>
 );
 
