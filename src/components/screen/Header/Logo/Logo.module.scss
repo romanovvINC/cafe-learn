@@ -1,8 +1,15 @@
 @import '../../../../styles/variables';
 
 .logo {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    object-fit: fill;
+    > picture {
+        margin: 0;
+        > img {
+            margin: 0;
+        }
+    }
 }

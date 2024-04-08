@@ -192,7 +192,7 @@ const Auth = () => {
                             )}
                     </form>
                 </div>
-            ) : <div>не видна</div>
+            ) : null
     );
 };
 

@@ -9,7 +9,6 @@ interface IHeaderProps {
 
 const Header:FC<IHeaderProps> = ({ Auth }) => (
     <header className={styles.Header}>
-        <Logo />
         <NavBar Auth={Auth} />
     </header>
 );

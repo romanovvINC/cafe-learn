@@ -56,6 +56,7 @@ export const currentTestSlice = createSlice({
       state.isLoading = true;
     })
       .addCase(createCurrentTest.fulfilled, (state, { payload }) => {
+        console.log(payload);
         state.isLoading = false;
         state.allQuestions = payload.allQuestions;
         state.currentQuestion = payload.allQuestions[0];

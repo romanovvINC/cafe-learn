@@ -5,6 +5,7 @@ import { useAuth } from '../../../../hooks/useAuth';
 import { useActions } from '../../../../hooks/useActions';
 import {role} from "../../../../types/userTypes";
 import {useNavigate} from "react-router-dom";
+import Logo from "../Logo/Logo";
 
 interface INavBarProps {
     Auth: boolean
@@ -15,9 +16,9 @@ interface IMenuOptions {
     label: string
 }
 
-const userMenuItems: IMenuOptions[] = [{ label: 'Личный кабинет', value: 'personal-area' }, { label: 'Выход', value: 'exit' }];
+const userMenuItems: IMenuOptions[] = [{ label: 'Личный кабинет', value: 'personal-area' }];
 
-const adminMenuItems: IMenuOptions[] = [{ label: 'Личный кабинет', value: 'personal-area' }, { label: 'Админ панель', value: 'admin-panel' }, { label: 'Выход', value: 'exit' }];
+const adminMenuItems: IMenuOptions[] = [{ label: 'Личный кабинет', value: 'personal-area' }, { label: 'Админ панель', value: 'admin-panel' }];
 
 const NavBar:FC<INavBarProps> = ({ Auth }) => {
     const [navBarListVisible, setNavBarListVisible] = useState<boolean>(false);
@@ -54,6 +55,7 @@ const NavBar:FC<INavBarProps> = ({ Auth }) => {
 
     return (
         <nav className={cn(styles.navBar)}>
+            <Logo />
             <div className={cn(styles.navBarList)}>
                 {user && (
                     <div className={styles.userMenu}>
@@ -61,15 +63,17 @@ const NavBar:FC<INavBarProps> = ({ Auth }) => {
                             isAdmin ? adminMenuItems.map((option) => (
                                 <div
                                     key={option.value}
-                                    className={cn(styles.dropdownItem)}
+                                    className={cn(styles.menuItem)}
                                     onClick={() => handleClickOption('admin-panel')}
-                                />)) : userMenuItems.map((option) => (
+                                >
+                                    <p>{option.label}</p>
+                                </div>)) : userMenuItems.map((option) => (
                                     <div
                                         key={option.value}
-                                        className={cn(styles.dropdownItem)}
+                                        className={cn(styles.menuItem)}
                                         onClick={() => handleClickOption('personal-area')}
-                                    >
-                                    {option.label}
+                                    ><p>{option.label}</p>
+
                                 </div>))
                         }
                     </div>
@@ -91,18 +95,6 @@ const NavBar:FC<INavBarProps> = ({ Auth }) => {
                     )
                 }
             </div>
-            <button
-                className={cn(styles.navToggle, {
-                    [styles.openBtn]: navBarListVisible === true,
-                    [styles.closeBtn]: navBarListVisible === false,
-                })}
-                type="button"
-                onClick={() => {
-                    setNavBarListVisible(!navBarListVisible);
-                }}
-            >
-                <span className={styles.visuallyHidden}>Открыть меню</span>
-            </button>
         </nav>
     );
 };

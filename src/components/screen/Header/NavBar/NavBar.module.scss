@@ -2,10 +2,12 @@
 
 .navBar {
   display: flex;
+  align-items: center;
   height: 22px;
   width: 100%;
   position: relative;
-  background-color: $blackBackground;
+  max-width: 800px;
+  margin: 0 auto;
   z-index: 100;
 }
 
@@ -27,6 +29,7 @@
 }
 
 .userMenu {
+  display: flex;
   margin-left: auto;
 }
 
@@ -96,7 +99,7 @@
   display: block;
 }
 
-.dropdownItem {
+.menuItem {
   font-size: 1.6em;
   line-height: 22px;
   padding: 18px;
