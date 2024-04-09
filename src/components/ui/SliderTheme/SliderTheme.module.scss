@@ -1,0 +1,104 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  .swiperCard {
+    height: 500px;
+
+    >div > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      color: black;
+      height: 500px;
+      border-radius: 10px;
+      background-color: $beige;
+      padding: 20px;
+
+      .containerPoster {
+        min-height: 225px;
+      }
+
+      .img {
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .videos {
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .displayNoneImg {
+        display: none;
+      }
+
+      .title {
+        margin: 0;
+      }
+
+      .btnContainer {
+        margin-top: auto;
+
+        .btn {
+          width: 100%;
+          height: 60px;
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+.desktopContainer {
+  .swiperCard {
+    >div > div {
+      .title {
+        font-size: 26px;
+      }
+
+      .description {
+        font-size: 22px;
+        margin: 0;
+        max-height: 150px;
+      }
+    }
+  }
+}
+
+.tabletContainer {
+  display: none;
+
+  .swiperCard {
+    >div > div {
+      .title {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .description {
+        font-size: 20px;
+        margin: 0;
+        max-height: 150px;
+      }
+    }
+  }
+}
+
+.mobileContainer {
+  display: none;
+
+  .swiperCard {
+    >div > div {
+      .title {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .description {
+        font-size: 20px;
+        margin: 0;
+        max-height: 150px;
+      }
+    }
+  }
+}

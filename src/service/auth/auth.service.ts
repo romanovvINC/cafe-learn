@@ -48,8 +48,8 @@ export const authService = {
     async login(loginData: ILogin) {
         const { email, password } = loginData;
         const response = await axiosPublic.post<IUser>(getLoginUrl(), { email, password });
+        console.log(response.data);
         if (response.data) saveTokenStorage(uuid.v4(), response.data);
-
         return response;
     },
 

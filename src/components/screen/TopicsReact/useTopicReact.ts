@@ -3,6 +3,7 @@ import { useQuery } from 'react-query';
 import { topicService } from '../../../service/topics/topics.service';
 import { userService } from '../../../service/user/user.service';
 import { MyToast } from '../../ui/MyToast/MyToast';
+import {role} from "../../../types/userTypes";
 
 export const useTopicsReact = (id: string) => {
   const { isLoading: topicsLoading, data: topicsData } = useQuery(['all topics'], () => topicService.getAll(), {

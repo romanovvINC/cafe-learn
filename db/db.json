@@ -1,38 +1,989 @@
 {
   "users": [
     {
-      "id": "2342352",
+      "id": "242152",
       "email": "test@mail.ru",
       "password": "654321",
-      "name": "Arsen",
+      "name": "Artem",
       "avatar": "/avatar",
-      "isAdmin": false,
-      "pointTests": []
-    },
-    {
-      "id": "1",
-      "email": "yaroslav@mail.ru",
-      "password": "123456",
-      "name": "Yen134",
-      "avatar": "/avatar",
-      "isAdmin": true,
+      "role": "administrator",
       "pointTests": [
         {
-          "idUser": "1",
+          "idUser": "242152",
           "idTest": "edeccac7-2c93-409f-82b1-2be1c8fe8777",
           "points": 5
         },
         {
-          "idUser": 1,
+          "idUser": "242152",
           "idTest": "aa9f8e87-8ab0-401b-a25f-17662ac53665",
+          "points": 5
+        },
+        {
+          "idUser": "242152",
+          "idTest": "f1315e00-c7fc-4789-b045-5e302fda1b14",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "id": "234231252362352",
+      "email": "test2@mail.ru",
+      "password": "654321",
+      "name": "Arsen",
+      "avatar": "/avatar",
+      "role": "barista",
+      "pointTests": [
+        {
+          "idUser": "234231252362352",
+          "idTest": "edeccac7-2c93-409f-82b1-2be1c8fe8777",
           "points": 1
         },
         {
-          "idUser": 1,
+          "idUser": "234231252362352",
+          "idTest": "aa9f8e87-8ab0-401b-a25f-17662ac53665",
+          "points": 4
+        },
+        {
+          "idUser": "234231252362352",
           "idTest": "f1315e00-c7fc-4789-b045-5e302fda1b14",
           "points": 3
         }
       ]
+    },
+    {
+      "id": "276856",
+      "email": "test3@mail.ru",
+      "password": "654321",
+      "name": "Victor",
+      "avatar": "/avatar",
+      "role": "intern",
+      "pointTests": [
+        {
+          "idUser": "276856",
+          "idTest": "edeccac7-2c93-409f-82b1-2be1c8fe8777",
+          "points": 3
+        },
+        {
+          "idUser": "276856",
+          "idTest": "aa9f8e87-8ab0-401b-a25f-17662ac53665",
+          "points": 5
+        },
+        {
+          "idUser": "276856",
+          "idTest": "f1315e00-c7fc-4789-b045-5e302fda1b14",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "id": "11111",
+      "email": "yaroslav@mail.ru",
+      "password": "123456",
+      "name": "Yaroslav13456",
+      "avatar": "/avatar",
+      "role": "barista",
+      "pointTests": [
+        {
+          "idUser": "276856",
+          "idTest": "edeccac7-2c93-409f-82b1-2be1c8fe8777",
+          "points": 5
+        },
+        {
+          "idUser": "276856",
+          "idTest": "aa9f8e87-8ab0-401b-a25f-17662ac53665",
+          "points": 4
+        },
+        {
+          "idUser": "276856",
+          "idTest": "f1315e00-c7fc-4789-b045-5e302fda1b14",
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "65485685654",
+      "email": "alex@mail.ru",
+      "password": "123456",
+      "name": "Alex",
+      "avatar": "/avatar",
+      "role": "hr-manager",
+      "pointTests": []
+    }
+  ],
+  "allTest": [
+    {
+      "id": "edeccac7-2c93-409f-82b1-2be1c8fe8777",
+      "currentQuestions": [
+        {
+          "id": "8c906ba9-5aad-4737-9a0e-d978f980fa1d",
+          "allAnswer": [
+            {
+              "id": "98a8db77-58fd-488f-a445-708c9b9d7e62",
+              "idQuestion": "8c906ba9-5aad-4737-9a0e-d978f980fa1d",
+              "textAnswer": "Любая закрытая обувь"
+            },
+            {
+              "id": "408c56cd-280d-4b4c-ad51-226e6aef063f",
+              "idQuestion": "8c906ba9-5aad-4737-9a0e-d978f980fa1d",
+              "textAnswer": "Сланцы"
+            },
+            {
+              "id": "3a34de4a-0313-416a-b07d-e1d7c6ff45df",
+              "idQuestion": "8c906ba9-5aad-4737-9a0e-d978f980fa1d",
+              "textAnswer": "Только кроссовки"
+            }
+          ],
+          "correctAnswerId": [
+            "98a8db77-58fd-488f-a445-708c9b9d7e62"
+          ],
+          "textQuestion": "Какая обвуь нужна при работе ?"
+        },
+        {
+          "id": "2c544733-bab4-40b3-ac95-ce0c5fbb8a25",
+          "allAnswer": [
+            {
+              "id": "40746524-bc7d-4dff-914f-50e8987e074a",
+              "idQuestion": "2c544733-bab4-40b3-ac95-ce0c5fbb8a25",
+              "textAnswer": "Шапочка, принятый душ"
+            },
+            {
+              "id": "2de2317c-9e89-40c9-a45a-4016c977f18f",
+              "idQuestion": "2c544733-bab4-40b3-ac95-ce0c5fbb8a25",
+              "textAnswer": "Чщательно вымытые руки, отсутствие на руках порезов, постриженные ногти, убранные длинные волосы, парфюм"
+            },
+            {
+              "id": "91a239a6-1e20-4a58-991e-0336850f8426",
+              "idQuestion": "2c544733-bab4-40b3-ac95-ce0c5fbb8a25",
+              "textAnswer": "Отсутствие на руках порезов, постриженные ногти"
+            }
+          ],
+          "correctAnswerId": [
+            "2de2317c-9e89-40c9-a45a-4016c977f18f"
+          ],
+          "textQuestion": "Выберите пункт в котором перечислены все необходимые правила гигиены"
+        },
+        {
+          "id": "e9747877-0183-454b-a209-4e96adec4b20",
+          "allAnswer": [
+            {
+              "id": "7c73c73c-c643-411b-8295-756d858c9c9f",
+              "idQuestion": "e9747877-0183-454b-a209-4e96adec4b20",
+              "textAnswer": "Проверить наличие воды в бутылках"
+            },
+            {
+              "id": "d9b59967-ecce-4790-95fe-8eec2c25e7e2",
+              "idQuestion": "e9747877-0183-454b-a209-4e96adec4b20",
+              "textAnswer": "Проверить наличие электричества"
+            },
+            {
+              "id": "d0d4e815-b844-4401-a84e-7ccf09ddf958",
+              "idQuestion": "e9747877-0183-454b-a209-4e96adec4b20",
+              "textAnswer": "Включить кофе-машину"
+            },
+            {
+              "id": "7b8afe4e-ec8b-40cc-a153-550d65f6894b",
+              "idQuestion": "e9747877-0183-454b-a209-4e96adec4b20",
+              "textAnswer": "Проверить датчики кофе-машины"
+            }
+          ],
+          "correctAnswerId": [
+            "7c73c73c-c643-411b-8295-756d858c9c9f",
+            "d9b59967-ecce-4790-95fe-8eec2c25e7e2",
+            "d0d4e815-b844-4401-a84e-7ccf09ddf958",
+            "7b8afe4e-ec8b-40cc-a153-550d65f6894b"
+          ],
+          "textQuestion": "Какие действия нужно осуществить в начале рабочего дня?"
+        },
+        {
+          "id": "63b6c506-bed0-47ed-bf58-e5308e2d6bcc",
+          "allAnswer": [
+            {
+              "id": "45a84f24-0ea0-4d6d-9d23-73dfd07b625d",
+              "idQuestion": "63b6c506-bed0-47ed-bf58-e5308e2d6bcc",
+              "textAnswer": "Уменьшить тумблером скорость подачи воды"
+            },
+            {
+              "id": "27a505ce-c171-43f5-b4e1-3ae08ba1a6df",
+              "idQuestion": "63b6c506-bed0-47ed-bf58-e5308e2d6bcc",
+              "textAnswer": "Немедленно выключить кофе-машину и обратиться в сервисную службу"
+            },
+            {
+              "id": "27a444ce-c171-43f5-b4e1-3ae08ba1a6df",
+              "idQuestion": "63b6c506-bed0-47ed-bf58-e5308e2d6bcc",
+              "textAnswer": "Ничего не делать, это обычное рабочее давление"
+            }
+          ],
+          "correctAnswerId": [
+            "27a505ce-c171-43f5-b4e1-3ae08ba1a6df"
+          ],
+          "textQuestion": "Что делать если датчик давления бойлера показывает значение в 2 атмосферы ?"
+        },
+        {
+          "id": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+          "allAnswer": [
+            {
+              "id": "3818850e-5772-45d8-8d01-6fceeb646c46",
+              "idQuestion": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+              "textAnswer": "Сделать сервисное обслуживание кофе-машины"
+            },
+            {
+              "id": "b6958ae5-9be4-4607-aa1f-fe5fcf2efe71",
+              "idQuestion": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+              "textAnswer": "Уборка рабочего места"
+            },
+            {
+              "id": "a709c848-2029-40d4-8a26-86617e2f0bd3",
+              "idQuestion": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+              "textAnswer": "Оставление оборудования включенным"
+            },
+            {
+              "id": "de8b5c31-79b0-4267-bdfc-72e98b2bfa02",
+              "idQuestion": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+              "textAnswer": "Оставление кофейных зерен на рабочем месте, для удобства последующего открытия"
+            }
+          ],
+          "correctAnswerId": [
+            "3818850e-5772-45d8-8d01-6fceeb646c46",
+            "de8b5c31-79b0-4267-bdfc-72e98b2bfa02"
+          ],
+          "textQuestion": "В конце рабочего дня необходимо: "
+        }
+      ]
+    },
+    {
+      "id": "aa9f8e87-8ab0-401b-a25f-17662ac53665",
+      "currentQuestions": [
+        {
+          "id": "8511a187-35cf-4fd6-87bf-899e1c446ec0",
+          "allAnswer": [
+            {
+              "id": "26071b4c-6d01-4208-bdbb-f8cf92772d23",
+              "idQuestion": "8511a187-35cf-4fd6-87bf-899e1c446ec0",
+              "textAnswer": "Инструмент предназнчаенный для формирования кофейной таблетки"
+            },
+            {
+              "id": "6292a19e-9d95-494d-ae55-c02dd0b0d726",
+              "idQuestion": "8511a187-35cf-4fd6-87bf-899e1c446ec0",
+              "textAnswer": "Датчик температуры в кофе-машине"
+            },
+            {
+              "id": "8e284a84-565a-47ea-aa9b-e6348559f817",
+              "idQuestion": "8511a187-35cf-4fd6-87bf-899e1c446ec0",
+              "textAnswer": "Измельчитель кофейных зерен "
+            }
+          ],
+          "correctAnswerId": [
+            "26071b4c-6d01-4208-bdbb-f8cf92772d23"
+          ],
+          "textQuestion": "Что такое темпер ?"
+        },
+        {
+          "id": "fd24bfdc-1ae5-44cb-b383-2924d5a78f7b",
+          "allAnswer": [
+            {
+              "id": "63df4e2d-35de-462b-811a-622a4900596a",
+              "idQuestion": "fd24bfdc-1ae5-44cb-b383-2924d5a78f7b",
+              "textAnswer": "Записная книжка"
+            },
+            {
+              "id": "5e59af94-5918-4874-89f7-7169e5926424",
+              "idQuestion": "fd24bfdc-1ae5-44cb-b383-2924d5a78f7b",
+              "textAnswer": "Специальная коробка для хранения разных сортов кофе"
+            },
+            {
+              "id": "8519092b-6727-42fd-8eb6-3c68a91632f4",
+              "idQuestion": "fd24bfdc-1ae5-44cb-b383-2924d5a78f7b",
+              "textAnswer": "Это коробка в которой остается переработанная кофейная таблетка"
+            }
+          ],
+          "correctAnswerId": [
+            "8519092b-6727-42fd-8eb6-3c68a91632f4"
+          ],
+          "textQuestion": "Что такое нот-бокс ?"
+        },
+        {
+          "id": "b5e20aed-0034-474f-b4e4-2205c422f85a",
+          "allAnswer": [
+            {
+              "id": "f54c3acb-fffb-4e10-8135-eedd9a5ceb80",
+              "idQuestion": "b5e20aed-0034-474f-b4e4-2205c422f85a",
+              "textAnswer": "Это металлический молочник, использующийся для взбивания молока"
+            },
+            {
+              "id": "e7fd5fd9-2c5d-4fd1-ab4e-df50c9f26afd",
+              "idQuestion": "b5e20aed-0034-474f-b4e4-2205c422f85a",
+              "textAnswer": "Специальный инструмент для процеживания кофейной гущи"
+            },
+            {
+              "id": "11d8d429-65a0-4389-a2cf-6cc6178e9bc7",
+              "idQuestion": "b5e20aed-0034-474f-b4e4-2205c422f85a",
+              "textAnswer": "Емкость для хранения кофейной гущи"
+            }
+          ],
+          "correctAnswerId": [
+            "f54c3acb-fffb-4e10-8135-eedd9a5ceb80"
+          ],
+          "textQuestion": "Что такое питчер ?"
+        },
+        {
+          "id": "4c95dfc6-6bf3-4257-8f11-2e381ccaecc4",
+          "allAnswer": [
+            {
+              "id": "99de0e3e-0d10-4fde-a1a6-fe3371e8b2eb",
+              "idQuestion": "4c95dfc6-6bf3-4257-8f11-2e381ccaecc4",
+              "textAnswer": "Это металлический молочник, использующийся для взбивания молока"
+            },
+            {
+              "id": "c5282a0d-3c4c-406b-b113-d655b7757002",
+              "idQuestion": "4c95dfc6-6bf3-4257-8f11-2e381ccaecc4",
+              "textAnswer": "Специальный инструмент для процеживания кофейной гущи"
+            },
+            {
+              "id": "63bba9ca-6185-43f3-954c-e3c620837a32",
+              "idQuestion": "4c95dfc6-6bf3-4257-8f11-2e381ccaecc4",
+              "textAnswer": "Емкость для хранения кофейной гущи"
+            }
+          ],
+          "correctAnswerId": [
+            "63bba9ca-6185-43f3-954c-e3c620837a32"
+          ],
+          "textQuestion": "Что такое питчер ?"
+        },
+        {
+          "id": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+          "allAnswer": [
+            {
+              "id": "49dd3b88-9eab-4eaa-a265-505b2591d386",
+              "idQuestion": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+              "textAnswer": "Это металлический молочник, использующийся для взбивания молока"
+            },
+            {
+              "id": "6dc6a23a-a479-4df0-a87b-621d01b1b552",
+              "idQuestion": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+              "textAnswer": "Это металлический молочник, использующийся для взбивания молока"
+            },
+            {
+              "id": "87943d3d-69a1-43a5-8452-7c4e78e4eb1d",
+              "idQuestion": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+              "textAnswer": "Специальный инструмент для процеживания кофейной гущи"
+            },
+            {
+              "id": "40f44c9d-bb36-4bcd-8172-009a4339f3af",
+              "idQuestion": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+              "textAnswer": "Емкость для хранения кофейной гущи"
+            }
+          ],
+          "correctAnswerId": [
+            "49dd3b88-9eab-4eaa-a265-505b2591d386",
+            "6dc6a23a-a479-4df0-a87b-621d01b1b552"
+          ],
+          "textQuestion": "Что такое питчер ?"
+        }
+      ]
+    },
+    {
+      "id": "f1315e00-c7fc-4789-b045-5e302fda1b14",
+      "currentQuestions": [
+        {
+          "id": "90a09590-4c2e-49a4-8b22-6031219e7791",
+          "allAnswer": [
+            {
+              "id": "3642b801-22cc-406e-b428-1025d88c2274",
+              "idQuestion": "90a09590-4c2e-49a4-8b22-6031219e7791",
+              "textAnswer": "Держатель чашки"
+            },
+            {
+              "id": "6583e88f-d05c-4e14-9962-da124384f32a",
+              "idQuestion": "90a09590-4c2e-49a4-8b22-6031219e7791",
+              "textAnswer": "Панель управленияе"
+            },
+            {
+              "id": "362967b8-53bd-4d2a-b139-1fb96fce34ce",
+              "idQuestion": "90a09590-4c2e-49a4-8b22-6031219e7791",
+              "textAnswer": "Элементы через которые подается кофе"
+            }
+          ],
+          "correctAnswerId": [
+            "362967b8-53bd-4d2a-b139-1fb96fce34ce"
+          ],
+          "textQuestion": "Что такое рабочие группы в кофе-машине ?"
+        },
+        {
+          "id": "3032e72c-e2bc-4616-b32e-e4da0c2d2b05",
+          "allAnswer": [
+            {
+              "id": "654f4d2a-50ab-421b-ac1d-67f49d5e139c",
+              "idQuestion": "3032e72c-e2bc-4616-b32e-e4da0c2d2b05",
+              "textAnswer": "Сепаратор"
+            },
+            {
+              "id": "08712f43-45f6-41a6-b514-17860d41426f",
+              "idQuestion": "3032e72c-e2bc-4616-b32e-e4da0c2d2b05",
+              "textAnswer": "Мармит"
+            },
+            {
+              "id": "a87070e7-40de-488f-985b-ddf201f26592",
+              "idQuestion": "3032e72c-e2bc-4616-b32e-e4da0c2d2b05",
+              "textAnswer": "Бойлер "
+            }
+          ],
+          "correctAnswerId": [
+            "08712f43-45f6-41a6-b514-17860d41426f",
+            "a87070e7-40de-488f-985b-ddf201f26592"
+          ],
+          "textQuestion": "Что используется для нагревания кофе"
+        },
+        {
+          "id": "183ab206-c19b-4200-a20b-ff348301ee49",
+          "allAnswer": [
+            {
+              "id": "1d9a284a-7e82-410c-98a6-6f7540825556",
+              "idQuestion": "183ab206-c19b-4200-a20b-ff348301ee49",
+              "textAnswer": "В него насыпается кофе для приготовления"
+            },
+            {
+              "id": "abfd2d06-23aa-45cc-a5fb-1553b41ad842",
+              "idQuestion": "183ab206-c19b-4200-a20b-ff348301ee49",
+              "textAnswer": "Держатель чашки"
+            },
+            {
+              "id": "2bca982a-6644-4a2a-a9b2-fdb922864c22",
+              "idQuestion": "183ab206-c19b-4200-a20b-ff348301ee49",
+              "textAnswer": "Держатель кофе-машины"
+            }
+          ],
+          "correctAnswerId": [
+            "1d9a284a-7e82-410c-98a6-6f7540825556"
+          ],
+          "textQuestion": "Что такое холдер в кофе-машине ?"
+        },
+        {
+          "id": "8fb281c2-d625-4467-9617-fca07ff4c221",
+          "allAnswer": [
+            {
+              "id": "9cc7c22c-207b-434b-82e0-429ae1c02403",
+              "idQuestion": "8fb281c2-d625-4467-9617-fca07ff4c221",
+              "textAnswer": "2 атмосферы"
+            },
+            {
+              "id": "ea6a778b-4b83-4e69-b896-dbb5315f2b28",
+              "idQuestion": "8fb281c2-d625-4467-9617-fca07ff4c221",
+              "textAnswer": "1-1.5 атмосфер"
+            },
+            {
+              "id": "250be3f9-3f6b-4004-afbf-4bdd9b889008",
+              "idQuestion": "8fb281c2-d625-4467-9617-fca07ff4c221",
+              "textAnswer": "3 атмосферы"
+            }
+          ],
+          "correctAnswerId": [
+            "ea6a778b-4b83-4e69-b896-dbb5315f2b28"
+          ],
+          "textQuestion": "Какое нормальное давление в бойлере ?"
+        },
+        {
+          "id": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+          "allAnswer": [
+            {
+              "id": "57c3516c-f7b3-441f-9945-74728f7dd1cd",
+              "idQuestion": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+              "textAnswer": "Ручная"
+            },
+            {
+              "id": "24f6ef9f-fb83-4e3a-9ce7-74d040b085c8",
+              "idQuestion": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+              "textAnswer": "Автоматическая"
+            },
+            {
+              "id": "79ec1a1b-af1e-44ce-956e-996361f94771",
+              "idQuestion": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+              "textAnswer": "Полу-автоматическая"
+            },
+            {
+              "id": "d7374145-64cd-4e6b-b431-89accd73eef4",
+              "idQuestion": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+              "textAnswer": "Дренажная"
+            }
+          ],
+          "correctAnswerId": [
+            "57c3516c-f7b3-441f-9945-74728f7dd1cd",
+            "24f6ef9f-fb83-4e3a-9ce7-74d040b085c8",
+            "79ec1a1b-af1e-44ce-956e-996361f94771"
+          ],
+          "textQuestion": "Укажите верные виды кофемолок ?"
+        }
+      ]
+    },
+    {
+      "id": "32eccac7-2c93-409f-82b1-2be1c8fe8777",
+      "currentQuestions": [
+        {
+          "id": "8c906ba9-5aad-4737-9a0e-d978f980fa1d",
+          "allAnswer": [
+            {
+              "id": "98a8db77-58fd-488f-a445-708c9b9d7e62",
+              "idQuestion": "8c906ba9-5aad-4737-9a0e-d978f980fa1d",
+              "textAnswer": "Любая закрытая обувь"
+            },
+            {
+              "id": "408c56cd-280d-4b4c-ad51-226e6aef063f",
+              "idQuestion": "8c906ba9-5aad-4737-9a0e-d978f980fa1d",
+              "textAnswer": "Сланцы"
+            },
+            {
+              "id": "3a34de4a-0313-416a-b07d-e1d7c6ff45df",
+              "idQuestion": "8c906ba9-5aad-4737-9a0e-d978f980fa1d",
+              "textAnswer": "Только кроссовки"
+            }
+          ],
+          "correctAnswerId": [
+            "98a8db77-58fd-488f-a445-708c9b9d7e62"
+          ],
+          "textQuestion": "Какая обвуь нужна при работе ?"
+        },
+        {
+          "id": "2c544733-bab4-40b3-ac95-ce0c5fbb8a25",
+          "allAnswer": [
+            {
+              "id": "40746524-bc7d-4dff-914f-50e8987e074a",
+              "idQuestion": "2c544733-bab4-40b3-ac95-ce0c5fbb8a25",
+              "textAnswer": "Шапочка, принятый душ"
+            },
+            {
+              "id": "2de2317c-9e89-40c9-a45a-4016c977f18f",
+              "idQuestion": "2c544733-bab4-40b3-ac95-ce0c5fbb8a25",
+              "textAnswer": "Чщательно вымытые руки, отсутствие на руках порезов, постриженные ногти, убранные длинные волосы, парфюм"
+            },
+            {
+              "id": "91a239a6-1e20-4a58-991e-0336850f8426",
+              "idQuestion": "2c544733-bab4-40b3-ac95-ce0c5fbb8a25",
+              "textAnswer": "Отсутствие на руках порезов, постриженные ногти"
+            }
+          ],
+          "correctAnswerId": [
+            "2de2317c-9e89-40c9-a45a-4016c977f18f"
+          ],
+          "textQuestion": "Выберите пункт в котором перечислены все необходимые правила гигиены"
+        },
+        {
+          "id": "e9747877-0183-454b-a209-4e96adec4b20",
+          "allAnswer": [
+            {
+              "id": "7c73c73c-c643-411b-8295-756d858c9c9f",
+              "idQuestion": "e9747877-0183-454b-a209-4e96adec4b20",
+              "textAnswer": "Проверить наличие воды в бутылках"
+            },
+            {
+              "id": "d9b59967-ecce-4790-95fe-8eec2c25e7e2",
+              "idQuestion": "e9747877-0183-454b-a209-4e96adec4b20",
+              "textAnswer": "Проверить наличие электричества"
+            },
+            {
+              "id": "d0d4e815-b844-4401-a84e-7ccf09ddf958",
+              "idQuestion": "e9747877-0183-454b-a209-4e96adec4b20",
+              "textAnswer": "Включить кофе-машину"
+            },
+            {
+              "id": "7b8afe4e-ec8b-40cc-a153-550d65f6894b",
+              "idQuestion": "e9747877-0183-454b-a209-4e96adec4b20",
+              "textAnswer": "Проверить датчики кофе-машины"
+            }
+          ],
+          "correctAnswerId": [
+            "7c73c73c-c643-411b-8295-756d858c9c9f",
+            "d9b59967-ecce-4790-95fe-8eec2c25e7e2",
+            "d0d4e815-b844-4401-a84e-7ccf09ddf958",
+            "7b8afe4e-ec8b-40cc-a153-550d65f6894b"
+          ],
+          "textQuestion": "Какие действия нужно осуществить в начале рабочего дня?"
+        },
+        {
+          "id": "63b6c506-bed0-47ed-bf58-e5308e2d6bcc",
+          "allAnswer": [
+            {
+              "id": "45a84f24-0ea0-4d6d-9d23-73dfd07b625d",
+              "idQuestion": "63b6c506-bed0-47ed-bf58-e5308e2d6bcc",
+              "textAnswer": "Уменьшить тумблером скорость подачи воды"
+            },
+            {
+              "id": "27a505ce-c171-43f5-b4e1-3ae08ba1a6df",
+              "idQuestion": "63b6c506-bed0-47ed-bf58-e5308e2d6bcc",
+              "textAnswer": "Немедленно выключить кофе-машину и обратиться в сервисную службу"
+            },
+            {
+              "id": "27a444ce-c171-43f5-b4e1-3ae08ba1a6df",
+              "idQuestion": "63b6c506-bed0-47ed-bf58-e5308e2d6bcc",
+              "textAnswer": "Ничего не делать, это обычное рабочее давление"
+            }
+          ],
+          "correctAnswerId": [
+            "27a505ce-c171-43f5-b4e1-3ae08ba1a6df"
+          ],
+          "textQuestion": "Что делать если датчик давления бойлера показывает значение в 2 атмосферы ?"
+        },
+        {
+          "id": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+          "allAnswer": [
+            {
+              "id": "3818850e-5772-45d8-8d01-6fceeb646c46",
+              "idQuestion": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+              "textAnswer": "Сделать сервисное обслуживание кофе-машины"
+            },
+            {
+              "id": "b6958ae5-9be4-4607-aa1f-fe5fcf2efe71",
+              "idQuestion": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+              "textAnswer": "Уборка рабочего места"
+            },
+            {
+              "id": "a709c848-2029-40d4-8a26-86617e2f0bd3",
+              "idQuestion": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+              "textAnswer": "Оставление оборудования включенным"
+            },
+            {
+              "id": "de8b5c31-79b0-4267-bdfc-72e98b2bfa02",
+              "idQuestion": "d8fa1943-c0f2-413d-b037-b0a6fc411ec1",
+              "textAnswer": "Оставление кофейных зерен на рабочем месте, для удобства последующего открытия"
+            }
+          ],
+          "correctAnswerId": [
+            "3818850e-5772-45d8-8d01-6fceeb646c46",
+            "de8b5c31-79b0-4267-bdfc-72e98b2bfa02"
+          ],
+          "textQuestion": "В конце рабочего дня необходимо: "
+        }
+      ]
+    },
+    {
+      "id": "bb9f8e87-8ab0-401b-a25f-17662ac53665",
+      "currentQuestions": [
+        {
+          "id": "8511a187-35cf-4fd6-87bf-899e1c446ec0",
+          "allAnswer": [
+            {
+              "id": "26071b4c-6d01-4208-bdbb-f8cf92772d23",
+              "idQuestion": "8511a187-35cf-4fd6-87bf-899e1c446ec0",
+              "textAnswer": "Инструмент предназнчаенный для формирования кофейной таблетки"
+            },
+            {
+              "id": "6292a19e-9d95-494d-ae55-c02dd0b0d726",
+              "idQuestion": "8511a187-35cf-4fd6-87bf-899e1c446ec0",
+              "textAnswer": "Датчик температуры в кофе-машине"
+            },
+            {
+              "id": "8e284a84-565a-47ea-aa9b-e6348559f817",
+              "idQuestion": "8511a187-35cf-4fd6-87bf-899e1c446ec0",
+              "textAnswer": "Измельчитель кофейных зерен "
+            }
+          ],
+          "correctAnswerId": [
+            "26071b4c-6d01-4208-bdbb-f8cf92772d23"
+          ],
+          "textQuestion": "Что такое темпер ?"
+        },
+        {
+          "id": "fd24bfdc-1ae5-44cb-b383-2924d5a78f7b",
+          "allAnswer": [
+            {
+              "id": "63df4e2d-35de-462b-811a-622a4900596a",
+              "idQuestion": "fd24bfdc-1ae5-44cb-b383-2924d5a78f7b",
+              "textAnswer": "Записная книжка"
+            },
+            {
+              "id": "5e59af94-5918-4874-89f7-7169e5926424",
+              "idQuestion": "fd24bfdc-1ae5-44cb-b383-2924d5a78f7b",
+              "textAnswer": "Специальная коробка для хранения разных сортов кофе"
+            },
+            {
+              "id": "8519092b-6727-42fd-8eb6-3c68a91632f4",
+              "idQuestion": "fd24bfdc-1ae5-44cb-b383-2924d5a78f7b",
+              "textAnswer": "Это коробка в которой остается переработанная кофейная таблетка"
+            }
+          ],
+          "correctAnswerId": [
+            "8519092b-6727-42fd-8eb6-3c68a91632f4"
+          ],
+          "textQuestion": "Что такое нот-бокс ?"
+        },
+        {
+          "id": "b5e20aed-0034-474f-b4e4-2205c422f85a",
+          "allAnswer": [
+            {
+              "id": "f54c3acb-fffb-4e10-8135-eedd9a5ceb80",
+              "idQuestion": "b5e20aed-0034-474f-b4e4-2205c422f85a",
+              "textAnswer": "Это металлический молочник, использующийся для взбивания молока"
+            },
+            {
+              "id": "e7fd5fd9-2c5d-4fd1-ab4e-df50c9f26afd",
+              "idQuestion": "b5e20aed-0034-474f-b4e4-2205c422f85a",
+              "textAnswer": "Специальный инструмент для процеживания кофейной гущи"
+            },
+            {
+              "id": "11d8d429-65a0-4389-a2cf-6cc6178e9bc7",
+              "idQuestion": "b5e20aed-0034-474f-b4e4-2205c422f85a",
+              "textAnswer": "Емкость для хранения кофейной гущи"
+            }
+          ],
+          "correctAnswerId": [
+            "f54c3acb-fffb-4e10-8135-eedd9a5ceb80"
+          ],
+          "textQuestion": "Что такое питчер ?"
+        },
+        {
+          "id": "4c95dfc6-6bf3-4257-8f11-2e381ccaecc4",
+          "allAnswer": [
+            {
+              "id": "99de0e3e-0d10-4fde-a1a6-fe3371e8b2eb",
+              "idQuestion": "4c95dfc6-6bf3-4257-8f11-2e381ccaecc4",
+              "textAnswer": "Это металлический молочник, использующийся для взбивания молока"
+            },
+            {
+              "id": "c5282a0d-3c4c-406b-b113-d655b7757002",
+              "idQuestion": "4c95dfc6-6bf3-4257-8f11-2e381ccaecc4",
+              "textAnswer": "Специальный инструмент для процеживания кофейной гущи"
+            },
+            {
+              "id": "63bba9ca-6185-43f3-954c-e3c620837a32",
+              "idQuestion": "4c95dfc6-6bf3-4257-8f11-2e381ccaecc4",
+              "textAnswer": "Емкость для хранения кофейной гущи"
+            }
+          ],
+          "correctAnswerId": [
+            "63bba9ca-6185-43f3-954c-e3c620837a32"
+          ],
+          "textQuestion": "Что такое питчер ?"
+        },
+        {
+          "id": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+          "allAnswer": [
+            {
+              "id": "49dd3b88-9eab-4eaa-a265-505b2591d386",
+              "idQuestion": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+              "textAnswer": "Это металлический молочник, использующийся для взбивания молока"
+            },
+            {
+              "id": "6dc6a23a-a479-4df0-a87b-621d01b1b552",
+              "idQuestion": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+              "textAnswer": "Это металлический молочник, использующийся для взбивания молока"
+            },
+            {
+              "id": "87943d3d-69a1-43a5-8452-7c4e78e4eb1d",
+              "idQuestion": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+              "textAnswer": "Специальный инструмент для процеживания кофейной гущи"
+            },
+            {
+              "id": "40f44c9d-bb36-4bcd-8172-009a4339f3af",
+              "idQuestion": "5102d36b-5f2d-4da3-8998-73b7dcdc5c69",
+              "textAnswer": "Емкость для хранения кофейной гущи"
+            }
+          ],
+          "correctAnswerId": [
+            "49dd3b88-9eab-4eaa-a265-505b2591d386",
+            "6dc6a23a-a479-4df0-a87b-621d01b1b552"
+          ],
+          "textQuestion": "Что такое питчер ?"
+        }
+      ]
+    },
+    {
+      "id": "a2315e00-c7fc-4789-b045-5e302fda1b14",
+      "currentQuestions": [
+        {
+          "id": "90a09590-4c2e-49a4-8b22-6031219e7791",
+          "allAnswer": [
+            {
+              "id": "3642b801-22cc-406e-b428-1025d88c2274",
+              "idQuestion": "90a09590-4c2e-49a4-8b22-6031219e7791",
+              "textAnswer": "Держатель чашки"
+            },
+            {
+              "id": "6583e88f-d05c-4e14-9962-da124384f32a",
+              "idQuestion": "90a09590-4c2e-49a4-8b22-6031219e7791",
+              "textAnswer": "Панель управленияе"
+            },
+            {
+              "id": "362967b8-53bd-4d2a-b139-1fb96fce34ce",
+              "idQuestion": "90a09590-4c2e-49a4-8b22-6031219e7791",
+              "textAnswer": "Элементы через которые подается кофе"
+            }
+          ],
+          "correctAnswerId": [
+            "362967b8-53bd-4d2a-b139-1fb96fce34ce"
+          ],
+          "textQuestion": "Что такое рабочие группы в кофе-машине ?"
+        },
+        {
+          "id": "3032e72c-e2bc-4616-b32e-e4da0c2d2b05",
+          "allAnswer": [
+            {
+              "id": "654f4d2a-50ab-421b-ac1d-67f49d5e139c",
+              "idQuestion": "3032e72c-e2bc-4616-b32e-e4da0c2d2b05",
+              "textAnswer": "Сепаратор"
+            },
+            {
+              "id": "08712f43-45f6-41a6-b514-17860d41426f",
+              "idQuestion": "3032e72c-e2bc-4616-b32e-e4da0c2d2b05",
+              "textAnswer": "Мармит"
+            },
+            {
+              "id": "a87070e7-40de-488f-985b-ddf201f26592",
+              "idQuestion": "3032e72c-e2bc-4616-b32e-e4da0c2d2b05",
+              "textAnswer": "Бойлер "
+            }
+          ],
+          "correctAnswerId": [
+            "08712f43-45f6-41a6-b514-17860d41426f",
+            "a87070e7-40de-488f-985b-ddf201f26592"
+          ],
+          "textQuestion": "Что используется для нагревания кофе"
+        },
+        {
+          "id": "183ab206-c19b-4200-a20b-ff348301ee49",
+          "allAnswer": [
+            {
+              "id": "1d9a284a-7e82-410c-98a6-6f7540825556",
+              "idQuestion": "183ab206-c19b-4200-a20b-ff348301ee49",
+              "textAnswer": "В него насыпается кофе для приготовления"
+            },
+            {
+              "id": "abfd2d06-23aa-45cc-a5fb-1553b41ad842",
+              "idQuestion": "183ab206-c19b-4200-a20b-ff348301ee49",
+              "textAnswer": "Держатель чашки"
+            },
+            {
+              "id": "2bca982a-6644-4a2a-a9b2-fdb922864c22",
+              "idQuestion": "183ab206-c19b-4200-a20b-ff348301ee49",
+              "textAnswer": "Держатель кофе-машины"
+            }
+          ],
+          "correctAnswerId": [
+            "1d9a284a-7e82-410c-98a6-6f7540825556"
+          ],
+          "textQuestion": "Что такое холдер в кофе-машине ?"
+        },
+        {
+          "id": "8fb281c2-d625-4467-9617-fca07ff4c221",
+          "allAnswer": [
+            {
+              "id": "9cc7c22c-207b-434b-82e0-429ae1c02403",
+              "idQuestion": "8fb281c2-d625-4467-9617-fca07ff4c221",
+              "textAnswer": "2 атмосферы"
+            },
+            {
+              "id": "ea6a778b-4b83-4e69-b896-dbb5315f2b28",
+              "idQuestion": "8fb281c2-d625-4467-9617-fca07ff4c221",
+              "textAnswer": "1-1.5 атмосфер"
+            },
+            {
+              "id": "250be3f9-3f6b-4004-afbf-4bdd9b889008",
+              "idQuestion": "8fb281c2-d625-4467-9617-fca07ff4c221",
+              "textAnswer": "3 атмосферы"
+            }
+          ],
+          "correctAnswerId": [
+            "ea6a778b-4b83-4e69-b896-dbb5315f2b28"
+          ],
+          "textQuestion": "Какое нормальное давление в бойлере ?"
+        },
+        {
+          "id": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+          "allAnswer": [
+            {
+              "id": "57c3516c-f7b3-441f-9945-74728f7dd1cd",
+              "idQuestion": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+              "textAnswer": "Ручная"
+            },
+            {
+              "id": "24f6ef9f-fb83-4e3a-9ce7-74d040b085c8",
+              "idQuestion": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+              "textAnswer": "Автоматическая"
+            },
+            {
+              "id": "79ec1a1b-af1e-44ce-956e-996361f94771",
+              "idQuestion": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+              "textAnswer": "Полу-автоматическая"
+            },
+            {
+              "id": "d7374145-64cd-4e6b-b431-89accd73eef4",
+              "idQuestion": "5a089a3e-9c5c-45f8-827c-18deae7cf16c",
+              "textAnswer": "Дренажная"
+            }
+          ],
+          "correctAnswerId": [
+            "57c3516c-f7b3-441f-9945-74728f7dd1cd",
+            "24f6ef9f-fb83-4e3a-9ce7-74d040b085c8",
+            "79ec1a1b-af1e-44ce-956e-996361f94771"
+          ],
+          "textQuestion": "Укажите верные виды кофемолок ?"
+        }
+      ]
+    }
+  ],
+  "topicsOfStudy": [
+    {
+      "id": "4fde4514-0ac7-4ad6-8291-4f3c3cedf9b1",
+      "descriptionTopic": "Базовые вещи в работе бариста",
+      "passedTopic": false,
+      "titleTopic": "Введение",
+      "numberTopic": 1,
+      "relatedQuestionsId": "edeccac7-2c93-409f-82b1-2be1c8fe8777",
+      "pictureTopicUrl": "cafe-poster.jpeg",
+      "videoUrl": "first-class.mp4",
+      "role": "barista"
+    },
+    {
+      "id": "48fbf953-edf0-4588-ac37-17f3b062919b",
+      "descriptionTopic": "Начальное руководство по аксессуарам",
+      "passedTopic": false,
+      "titleTopic": "Аксессуары",
+      "numberTopic": 2,
+      "relatedQuestionsId": "aa9f8e87-8ab0-401b-a25f-17662ac53665",
+      "pictureTopicUrl": "cafe-poster.jpeg",
+      "videoUrl": "second-class.mp4",
+      "role": "barista"
+    },
+    {
+      "id": "d3068e00-18c7-4046-990a-6c1351a8ec85",
+      "descriptionTopic": "Обучение кофейному оборудованию",
+      "passedTopic": false,
+      "titleTopic": "Оборудование",
+      "numberTopic": 3,
+      "relatedQuestionsId": "f1315e00-c7fc-4789-b045-5e302fda1b14",
+      "pictureTopicUrl": "cafe-poster.jpeg",
+      "videoUrl": "third-class.mp4",
+      "role": "barista"
+    },
+    {
+      "id": "6fde4514-2ac5-4ad6-8291-4f3c3cedf9b1",
+      "descriptionTopic": "Базовые вещи в менеджменте",
+      "passedTopic": false,
+      "titleTopic": "Введение",
+      "numberTopic": 4,
+      "relatedQuestionsId": "32eccac7-2c93-409f-82b1-2be1c8fe8777",
+      "pictureTopicUrl": "cafe-poster.jpeg",
+      "videoUrl": "first-class.mp4",
+      "role": "manager"
+    },
+    {
+      "id": "12fbf953-edf0-4588-ac37-17f3b062919b",
+      "descriptionTopic": "Главные принципы в менджменте",
+      "passedTopic": false,
+      "titleTopic": "Постулаты",
+      "numberTopic": 5,
+      "relatedQuestionsId": "bb9f8e87-8ab0-401b-a25f-17662ac53665",
+      "pictureTopicUrl": "cafe-poster.jpeg",
+      "videoUrl": "second-class.mp4",
+      "role": "manager"
+    },
+    {
+      "id": "dad68e00-18c7-4046-990a-6c1351a8ec85",
+      "descriptionTopic": "Первые вопросы сотрудникам",
+      "passedTopic": false,
+      "titleTopic": "Вопросы",
+      "numberTopic": 6,
+      "relatedQuestionsId": "a2315e00-c7fc-4789-b045-5e302fda1b14",
+      "pictureTopicUrl": "cafe-poster.jpeg",
+      "videoUrl": "third-class.mp4",
+      "role": "manager"
     }
   ]
 }

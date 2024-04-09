@@ -21,15 +21,14 @@ const userMenuItems: IMenuOptions[] = [{ label: 'Личный кабинет', v
 const adminMenuItems: IMenuOptions[] = [{ label: 'Личный кабинет', value: 'personal-area' }, { label: 'Админ панель', value: 'admin-panel' }];
 
 const NavBar:FC<INavBarProps> = ({ Auth }) => {
-    const [navBarListVisible, setNavBarListVisible] = useState<boolean>(false);
-    const [valueMySettings, setValueMySettings] = useState<IMenuOptions | undefined>();
-    const [isAdmin, setIsAdmin]= useState<boolean>(false);
     const { logout, toggleModalAuth } = useActions();
     const { user, isLoading } = useAuth();
+    const [isAdmin, setIsAdmin]= useState<boolean>((user?.role === role.INTERN || user?.role === role.BARISTA));
     const navigate = useNavigate();
 
     const handleLogout = () => {
         toggleModalAuth({ isVisible: true });
+        navigate('/');
         logout();
     }
 
@@ -38,10 +37,10 @@ const NavBar:FC<INavBarProps> = ({ Auth }) => {
             navigate('/profile/settings');
         }
         if (option === 'admin-panel') {
-            navigate('/manage/statistics');
+            navigate('/admin');
         }
         if (option === 'exit') {
-            logout();
+            handleLogout();
         }
     };
 
@@ -51,7 +50,8 @@ const NavBar:FC<INavBarProps> = ({ Auth }) => {
         } else {
             setIsAdmin(true);
         }
-    }, [user]);
+        console.log(user)
+    }, [setIsAdmin, user]);
 
     return (
         <nav className={cn(styles.navBar)}>
@@ -60,18 +60,18 @@ const NavBar:FC<INavBarProps> = ({ Auth }) => {
                 {user && (
                     <div className={styles.userMenu}>
                         {
-                            isAdmin ? adminMenuItems.map((option) => (
+                            isAdmin && user ? adminMenuItems.map((option) => (
                                 <div
                                     key={option.value}
                                     className={cn(styles.menuItem)}
-                                    onClick={() => handleClickOption('admin-panel')}
+                                    onClick={() => handleClickOption(option.value)}
                                 >
                                     <p>{option.label}</p>
                                 </div>)) : userMenuItems.map((option) => (
                                     <div
                                         key={option.value}
                                         className={cn(styles.menuItem)}
-                                        onClick={() => handleClickOption('personal-area')}
+                                        onClick={() => handleClickOption(option.value)}
                                     ><p>{option.label}</p>
 
                                 </div>))

@@ -1,0 +1,167 @@
+@import "../../../../styles/variables.scss";
+
+.profileStatistics {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  column-gap: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1440px;
+  color: white;
+
+  .containerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+    padding-top: 30px;
+    border-right: 6px solid #000;
+    height: 700px;
+
+    .img {
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 30px;
+      margin: 0;
+      min-height: 38px;
+    }
+
+    .role {
+      margin-top: 32px;
+      font-size: 24px;
+      > span {
+        color: orange;
+      }
+    }
+
+    .containerLink {
+      display: none;
+      margin-top: 10px;
+      column-gap: 40px;
+    }
+  }
+
+  .userStatistics {
+    padding-top: 60px;
+    width: 60%;
+    padding-right: 20px;
+
+    .title {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .containerStats {
+      display: flex;
+      column-gap: 40px;
+      margin-top: 20px;
+
+      .filledTests {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 10px;
+        width: 400px;
+        background-color: $black;
+        border-radius: 10px;
+        padding: 20px;
+
+        >h2 {
+          font-size: 24px;
+          text-align: center;
+          margin: 0;
+        }
+
+        >h3 {
+          color: $orange;
+          font-size: 54px;
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+      .averageScore {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 400px;
+        background-color: $black;
+        row-gap: 10px;
+        border-radius: 10px;
+        padding: 20px;
+
+        >h2 {
+          font-size: 24px;
+          text-align: center;
+          margin: 0;
+
+        }
+
+        >h3 {
+          color: $orange;
+          font-size: 54px;
+          margin: 0;
+          text-align: center;
+
+        }
+      }
+    }
+  }
+}
+
+.statTableContainer {
+  display: flex;
+}
+
+.statTable {
+  display: flex;
+  width: 100%;
+  height: 330px;
+}
+
+.statBar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.statTableContainer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  .statBar {
+    margin-right: 36px;
+    .barValue {
+      font-size: 24px;
+    }
+    .barNumber {
+      font-size: 24px;
+      font-weight: 700;
+      color: $orange;
+      margin-right: 12px;
+    }
+  }
+}
+.bodyBarContainer {
+  display: flex;
+  align-items: center;
+  height: 250px;
+
+}
+
+.improveSkills {
+  > button {
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 24px;
+    text-align: center;
+    height: 64px;
+    margin: 32px auto 0 auto;
+  }
+}

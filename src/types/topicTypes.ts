@@ -6,5 +6,6 @@ export interface ITopic {
     relatedQuestionsId: string;
     passedTopic: boolean;
     descriptionTopic: string;
-    numberTopic: number
+    numberTopic: number,
+    role: string,
 }

@@ -1,7 +1,6 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { useAuth } from '../../../hooks/useAuth';
 import { ITopic } from '../../../types/topicTypes';
-import SliderTheme from '../../ui/SliderTheme/SliderTheme';
 import styles from './TopicsReact.module.scss';
 import { useTopicsReact } from './useTopicReact';
 import {Link} from "react-router-dom";
@@ -11,17 +10,21 @@ const TopicsReact = () => {
   const {
     topicsData, userData, topicsLoading, userLoading,
   } = useTopicsReact(user?.id || '');
-  let sortAllTopics: ITopic[] = [];
-  if (topicsData && userData) {
-    sortAllTopics = topicsData.sort((a, b) => a.numberTopic - b.numberTopic).map((topic) => {
-      if (userData.pointTests.some((test) => test.idTest === topic.relatedQuestionsId)) {
-        topic.passedTopic = true;
+  const [sortAllTopics, setSortAllTopics] = useState<ITopic[]>([]);
+  console.log(topicsData);
+  useEffect(() => {
+    if (topicsData && userData) {
+      setSortAllTopics(topicsData.filter((topic) => topic.role === user?.role).sort((a, b) => a.numberTopic - b.numberTopic).map((topic) => {
+        if (userData.pointTests.some((test) => test.idTest === topic.relatedQuestionsId)) {
+          topic.passedTopic = true;
+          return topic;
+        }
         return topic;
-      }
-
-      return topic;
-    });
-  }
+      }));
+    } else {
+      setSortAllTopics([]);
+    }
+  }, [topicsData, userData, user])
 
   return (
     <div className={styles.containerFooter}>
@@ -30,7 +33,7 @@ const TopicsReact = () => {
           {!topicsLoading && topicsData
           && (
           <div className={styles.loadingAnimation}>
-            <h1 className={styles.title}>Курсы</h1>
+            {sortAllTopics.length === 0 ? <h1 className={styles.title}>Курсы не найдены</h1> : <h1 className={styles.title}>Курсы</h1>}
             <div>
               {
                 sortAllTopics.map((topic) => {

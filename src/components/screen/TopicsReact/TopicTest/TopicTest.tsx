@@ -8,6 +8,8 @@ import { userTest } from '../../../../service/userTest/userTest.service';
 import { useAuth } from '../../../../hooks/useAuth';
 import Modal from '../../../ui/Modal/modal';
 import { getPointUser } from '../../../../utils/getPointUser';
+import Checkbox from "../../../ui/Checkbox/Checkbox";
+import RadioButton from "../../../ui/RadioButton/RadioButton";
 
 const TopicTest = () => {
   const {
@@ -100,6 +102,7 @@ const TopicTest = () => {
         } else {
           setTimeout(() => {
             cleanCurrentQuestion();
+            console.log(nextTopicId);
             navigate(`/topics/cafe/${nextTopicId}`);
           }, 3500);
         }
@@ -116,7 +119,7 @@ const TopicTest = () => {
       <>
         <div className={styles.header}>
           <h1 className={styles.title}>
-            Вопросы по теме
+            Вопросы по теме{` `}
             {currentTopicTitle}
           </h1>
           <span className={styles.numberTest}>
@@ -131,8 +134,8 @@ const TopicTest = () => {
             <div>
               <h2 className={styles.questions}>{currentQuestion?.textQuestion}</h2>
               <div className={styles.answersContainer}>
-                {currentQuestion.correctAnswerId.length === 1 && currentQuestion.allAnswer.map((answer) => <input onChange={(checked) => checked === true && setIdCheckedBtns([answer.id])} key={answer.id} className={styles.answer} type="radioBtn" checked={idCheckedBtns.some((idRadio) => idRadio === answer.id)}>{answer.textAnswer}</input>)}
-                {currentQuestion.correctAnswerId.length > 1 && currentQuestion.allAnswer.map((answer) => <input type="checkbox" onChange={(checked) => handleClickCheckbox(checked, answer.id)} key={answer.id} className={styles.answer} checked={idCheckedBtns.some((idCheckbox) => idCheckbox === answer.id)}>{answer.textAnswer}</input>)}
+                {currentQuestion.correctAnswerId.length === 1 && currentQuestion.allAnswer.map((answer) => <RadioButton onChange={(checked) => checked === true && setIdCheckedBtns([answer.id])} key={answer.id} className={styles.answer} type="radioBtn" checked={idCheckedBtns.some((idRadio) => idRadio === answer.id)}>{answer.textAnswer}</RadioButton>)}
+                {currentQuestion.correctAnswerId.length > 1 && currentQuestion.allAnswer.map((answer) => <Checkbox onChange={(checked) => handleClickCheckbox(checked, answer.id)} key={answer.id} className={styles.answer} checked={idCheckedBtns.some((idCheckbox) => idCheckbox === answer.id)}>{answer.textAnswer}</Checkbox>)}
               </div>
             </div>
           <div className={styles.containerBtn}>

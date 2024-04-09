@@ -2,13 +2,13 @@ import { axiosPrivate } from '../../api/interceptors';
 import { getAllTest, getAllTopics, getByIdTopic } from '../../constants/serverPath';
 import { ITopic } from '../../types/topicTypes';
 import { ITest, ICurrentQuestion } from '../../types/questionTypes';
+import {role} from "../../types/userTypes";
 
 const uuid = require('uuid');
 
 export const topicService = {
     async getAll() {
         const response = await axiosPrivate.get<ITopic[]>(getAllTopics());
-
         return response;
     },
 
@@ -18,7 +18,7 @@ export const topicService = {
         return response;
     },
 
-    async addTopic(questions: ICurrentQuestion[], descriptionTopic: string, titleTopic: string) {
+    async addTopic(questions: ICurrentQuestion[], descriptionTopic: string, titleTopic: string, role: role) {
         const { data: allTopics } = await axiosPrivate.get<ITopic[]>(getAllTopics());
         const resultQuestions: ICurrentQuestion[] = questions.map((q) => ({
             id: q.id,
@@ -41,6 +41,7 @@ export const topicService = {
             relatedQuestionsId: testOfTopic.id,
             pictureTopicUrl: 'react-poster.png',
             videoUrl: 'tor-4-video.mp4',
+            role: role,
         };
 
         await axiosPrivate.post<ITopic[]>(getAllTopics(), defaultTopic);

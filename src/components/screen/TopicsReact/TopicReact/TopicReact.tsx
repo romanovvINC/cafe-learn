@@ -6,6 +6,7 @@ import styles from './TopicReact.module.scss';
 import { useTopicReact } from './useTopicReact';
 import { MyToast } from '../../../ui/MyToast/MyToast';
 import { useActions } from '../../../../hooks/useActions';
+import {useAuth} from "../../../../hooks/useAuth";
 
 const TopicReact = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -18,12 +19,14 @@ const TopicReact = () => {
   } = useTopicReact(id || '');
   let imgUrl;
   let videoUrl;
+  const { user } = useAuth();
 
   useEffect(() => {
     setIsAnimation(true);
   }, [id]);
 
   if (currentTopic) {
+    console.log(currentTopic)
     try {
       imgUrl = require(`../../../../assets/img/${currentTopic.pictureTopicUrl}`);
       videoUrl = require(`../../../../assets/videos/${currentTopic.videoUrl}`);
@@ -38,14 +41,19 @@ const TopicReact = () => {
     if (currentTopic && allTopics && indexCurrentTopic !== undefined && indexCurrentTopic !== -1) {
       cleanCurrentQuestion();
       let nextTopicId;
-      if (indexCurrentTopic >= allTopics.length - 1) {
-        nextTopicId = 'lastTopic';
-      } else {
+      if (allTopics[indexCurrentTopic + 1].role === user?.role) {
         nextTopicId = allTopics[indexCurrentTopic + 1].id;
+      } else {
+        nextTopicId = 'lastTopic';
       }
+      console.log(allTopics);
+      console.log(allTopics.sort((a, b) => a.numberTopic - b.numberTopic));
+      console.log(indexCurrentTopic);
+      console.log(nextTopicId);
       createCurrentTest({
         id: currentTopic.relatedQuestionsId, currentTopicTitle: currentTopic.titleTopic, idTest: currentTopic.relatedQuestionsId, nextTopicId,
       });
+      setIsPlaying(false);
       navigate(`/topics/test/${currentTopic.relatedQuestionsId}`);
     }
   };
@@ -92,8 +100,8 @@ const TopicReact = () => {
         {currentTopic && indexCurrentTopic !== undefined && indexCurrentTopic !== -1
         && (
         <div className={styles.btnContainer}>
-          <button onClick={() => handleClickBack()} className={cn(styles.btn, styles.btnBack)} color="White" disabled={indexCurrentTopic < 1}>Назад</button>
-          <button onClick={() => handleClickTestBtn()} className={cn(styles.btn, styles.btnNext)} color="Pink">Перейти к заданию</button>
+          <button onClick={() => handleClickBack()} className={cn(styles.btn, styles.btnBack)} disabled={indexCurrentTopic < 1}>Назад</button>
+          <button onClick={() => handleClickTestBtn()} className={cn(styles.btn, styles.btnNext)}>Перейти к заданию</button>
         </div>
         )}
       </div>

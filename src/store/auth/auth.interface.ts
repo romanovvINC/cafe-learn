@@ -4,6 +4,8 @@ export interface IUserRegistration extends Omit<IUser, 'id' | 'pointTests' | 'ro
 
 export interface IUserLogin extends Omit<IUser, 'id' | 'name' | 'avatar' | 'pointTests' | 'role'> {}
 
+export interface IUserImproveSkills extends Omit<IUser, 'name' | 'avatar' | 'pointTests' | 'email' | 'password'> {}
+
 export interface IUserState extends Omit<IUser, 'email' | 'password'> {}
 
 export interface IInitialStateAuth {

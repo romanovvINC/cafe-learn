@@ -1,0 +1,71 @@
+@import "../../../../styles/variables.scss";
+
+.profileSettings {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  column-gap: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1440px;
+  color: white;
+
+  .containerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+    padding-top: 30px;
+    border-right: 6px solid #000;
+    height: 700px;
+
+    .img {
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 30px;
+      margin: 0;
+      min-height: 38px;
+    }
+
+    .role {
+      margin-top: 32px;
+      font-size: 24px;
+      > span {
+        color: orange;
+      }
+    }
+
+    .containerLink {
+      display: none;
+      margin-top: 10px;
+      column-gap: 40px;
+    }
+  }
+
+  .userSettings {
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+    row-gap: 40px;
+    .containerField {
+      display: flex;
+      align-items: center;
+
+      >span {
+        font-size: 28px;
+        width: 170px;
+      }
+
+      .field {
+        width: 400px;
+      }
+    }
+
+    .btn {
+      align-self: flex-end;
+    }
+  }
+}

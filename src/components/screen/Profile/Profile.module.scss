@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 168px);
+
+  .contentContainer {
+    width: 100%;
+    border-top: 6px solid $black;
+  }
+}

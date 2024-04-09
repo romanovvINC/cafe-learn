@@ -12,71 +12,20 @@
   margin-bottom: 50px;
   min-height: 450px;
 
-  @media (max-width: 1050px) {
-    min-height: 400px;
-  }
-
-  @media (max-width: $tabletWidth) {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-bottom: 50px;
-    padding-top: 130px;
-  }
-
-  @media (max-width: 800px) {
-    width: 640px;
-  }
-
-  @media (max-width: 600px) {
-    width: 460px;
-    min-height: 460px;
-  }
-
-  @media (max-width: $mobileOnlyWidth) {
-    width: 380px;
-    padding: 0 10px;
-  }
-
   .header {
     display: flex;
     margin: 0 auto;
     align-items: center;
     column-gap: 30px;
 
-    @media (max-width: 800px) {
-      flex-direction: column;
-    }
-
     .title {
       font-size: 50px;
-
-      @media (max-width: 1050px) {
-        font-size: 40px;
-      }
-
-      @media (max-width: 600px) {
-        font-size: 30px;
-      }
-
-      @media (max-width: $mobileOnlyWidth) {
-        font-size: 26px;
-      }
     }
 
     .numberTest {
       font-size: 40px;
       min-width: 150px;
       margin-top: 8px;
-
-      @media (max-width: 1050px) {
-        font-size: 34px;
-      }
-
-      @media (max-width: 600px) {
-        font-size: 30px;
-        min-width: 100px;
-      }
     }
   }
 
@@ -87,14 +36,6 @@
     .questions {
       font-size: 40px;
       text-align: center;
-
-      @media (max-width: 1050px) {
-        font-size: 34px;
-      }
-
-      @media (max-width: 600px) {
-        font-size: 26px;
-      }
     }
 
     .answersContainer {
@@ -104,34 +45,9 @@
       margin-bottom: 40px;
       margin-left: 14%;
 
-      @media (max-width: 1250px) {
-        margin-left: 8%;
-      }
-
-      @media (max-width: $tabletWidth) {
-        margin-left: 0;
-      }
-
       .answer {
+        text-align: left;
         font-size: 30px;
-
-        @media (max-width: 1050px) {
-          font-size: 26px;
-        }
-
-        @media (max-width: 950px) {
-          > p {
-            max-width: 90%;
-          }
-        }
-
-        @media (max-width: 600px) {
-          font-size: 22px;
-
-          > p {
-            max-width: 86%;
-          }
-        }
       }
     }
 
@@ -139,10 +55,6 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-
-      @media (max-width: 600px) {
-        flex-direction: column;
-      }
 
       .btn {
         height: 60px;
@@ -154,22 +66,11 @@
       }
 
       .btnBack {
-        @media (max-width: 600px) {
-          width: 100%;
-          margin-bottom: 20px;
-        }
       }
 
       .btnNext {
         width: 340px;
 
-        @media (max-width: 800px) {
-          width: 300px;
-        }
-
-        @media (max-width: 600px) {
-          width: 100%;
-        }
       }
     }
   }

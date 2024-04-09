@@ -1,5 +1,5 @@
 import {IUserState} from '../../store/auth/auth.interface';
-import {IUser, role} from '../../types/userTypes';
+import {IUser} from '../../types/userTypes';
 
 export const saveTokenStorage = (token: string, user: IUser) => {
     localStorage.setItem('accessToken', token);
@@ -8,7 +8,7 @@ export const saveTokenStorage = (token: string, user: IUser) => {
         avatar: user.avatar,
         name: user.name,
         id: user.id,
-        role: role.INTERN,
+        role: user.role,
     };
     localStorage.setItem('user', JSON.stringify(userStorage));
 };
