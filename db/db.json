@@ -79,23 +79,13 @@
       "id": "11111",
       "email": "yaroslav@mail.ru",
       "password": "123456",
-      "name": "Yaroslav13456",
+      "name": "Yaroslav1345678",
       "avatar": "/avatar",
       "role": "barista",
       "pointTests": [
         {
-          "idUser": "276856",
-          "idTest": "edeccac7-2c93-409f-82b1-2be1c8fe8777",
-          "points": 5
-        },
-        {
-          "idUser": "276856",
-          "idTest": "aa9f8e87-8ab0-401b-a25f-17662ac53665",
-          "points": 4
-        },
-        {
-          "idUser": "276856",
-          "idTest": "f1315e00-c7fc-4789-b045-5e302fda1b14",
+          "idUser": "11111",
+          "idTest": "32eccac7-2c93-409f-82b1-2be1c8fe8777",
           "points": 5
         }
       ]
@@ -108,6 +98,24 @@
       "avatar": "/avatar",
       "role": "hr-manager",
       "pointTests": []
+    },
+    {
+      "id": "cd2d5adb-89bc-4d1d-80c5-9a549c32bc2a",
+      "pointTests": [],
+      "email": "new_user@mail.ru",
+      "password": "123456",
+      "name": "new_user",
+      "avatar": "",
+      "role": "intern"
+    },
+    {
+      "id": "cd333adb-89bc-4d1d-80c5-9a549c55bc2a",
+      "pointTests": [],
+      "email": "valeria@mail.ru",
+      "password": "123456",
+      "name": "valeria",
+      "avatar": "",
+      "role": "administrator"
     }
   ],
   "allTest": [
@@ -916,6 +924,160 @@
           "textQuestion": "Укажите верные виды кофемолок ?"
         }
       ]
+    },
+    {
+      "id": "5cca50e9-db98-412a-b0dc-59b742cac935",
+      "currentQuestions": [
+        {
+          "id": "f7cb23c6-e938-46cb-a2e6-7ce8cfe0ab96",
+          "allAnswer": [
+            {
+              "id": "1da3054f-a0ea-4f3d-ba54-71a772a274d6",
+              "idQuestion": "f7cb23c6-e938-46cb-a2e6-7ce8cfe0ab96",
+              "textAnswer": "Ответ1"
+            },
+            {
+              "id": "f14182ce-4b3e-488e-8acf-8fd99e924d88",
+              "idQuestion": "f7cb23c6-e938-46cb-a2e6-7ce8cfe0ab96",
+              "textAnswer": "Ответ2"
+            },
+            {
+              "id": "13b109c9-aad9-4860-9806-83be35d098c2",
+              "idQuestion": "f7cb23c6-e938-46cb-a2e6-7ce8cfe0ab96",
+              "textAnswer": "Ответ3"
+            },
+            {
+              "id": "03b4739f-203a-46f4-b422-2b4e18d6c89b",
+              "idQuestion": "f7cb23c6-e938-46cb-a2e6-7ce8cfe0ab96",
+              "textAnswer": "Ответ4"
+            }
+          ],
+          "correctAnswerId": [
+            "1da3054f-a0ea-4f3d-ba54-71a772a274d6",
+            "f14182ce-4b3e-488e-8acf-8fd99e924d88",
+            "13b109c9-aad9-4860-9806-83be35d098c2",
+            "03b4739f-203a-46f4-b422-2b4e18d6c89b"
+          ],
+          "textQuestion": "Вопрос 1"
+        },
+        {
+          "id": "747f1e2a-51a5-43e9-acaa-5a09f249a92a",
+          "allAnswer": [
+            {
+              "id": "7d012eef-5334-4b2c-b2ed-8c7748a1d6ca",
+              "idQuestion": "747f1e2a-51a5-43e9-acaa-5a09f249a92a",
+              "textAnswer": "Ответ1"
+            },
+            {
+              "id": "83e567f2-747e-4359-8026-628d5ba70305",
+              "idQuestion": "747f1e2a-51a5-43e9-acaa-5a09f249a92a",
+              "textAnswer": "Ответ2"
+            },
+            {
+              "id": "c10badca-261b-46ec-9d4f-2267323f7a56",
+              "idQuestion": "747f1e2a-51a5-43e9-acaa-5a09f249a92a",
+              "textAnswer": "Ответ3"
+            },
+            {
+              "id": "d465eb0c-0081-489e-b07f-a3fa8fe945d0",
+              "idQuestion": "747f1e2a-51a5-43e9-acaa-5a09f249a92a",
+              "textAnswer": "Ответ4"
+            }
+          ],
+          "correctAnswerId": [
+            "c10badca-261b-46ec-9d4f-2267323f7a56"
+          ],
+          "textQuestion": "Вопрос 2"
+        },
+        {
+          "id": "6ba06d97-e719-4365-a948-185cebad8710",
+          "allAnswer": [
+            {
+              "id": "cd61b0bb-1cec-418b-a288-8a0f69db7f12",
+              "idQuestion": "6ba06d97-e719-4365-a948-185cebad8710",
+              "textAnswer": "Ответ1"
+            },
+            {
+              "id": "7195ea95-6b47-4406-9490-698db9701847",
+              "idQuestion": "6ba06d97-e719-4365-a948-185cebad8710",
+              "textAnswer": "Ответ2"
+            },
+            {
+              "id": "0b2ceeda-1e92-4f08-8eca-c6ec7124046e",
+              "idQuestion": "6ba06d97-e719-4365-a948-185cebad8710",
+              "textAnswer": "Ответ"
+            },
+            {
+              "id": "e4ede8bc-064c-451e-82ff-7fe1162232f9",
+              "idQuestion": "6ba06d97-e719-4365-a948-185cebad8710",
+              "textAnswer": "Ответ4"
+            }
+          ],
+          "correctAnswerId": [
+            "e4ede8bc-064c-451e-82ff-7fe1162232f9"
+          ],
+          "textQuestion": "Вопрос3"
+        },
+        {
+          "id": "fac7e6a8-2a5a-46c2-b835-2c0548638fd7",
+          "allAnswer": [
+            {
+              "id": "a100a1f6-45c7-4409-bc20-106ecb15ccdf",
+              "idQuestion": "fac7e6a8-2a5a-46c2-b835-2c0548638fd7",
+              "textAnswer": "Ответ1"
+            },
+            {
+              "id": "4be30ae7-1576-4450-92da-60c5a12b27e2",
+              "idQuestion": "fac7e6a8-2a5a-46c2-b835-2c0548638fd7",
+              "textAnswer": "Ответ2"
+            },
+            {
+              "id": "f157b141-fe0d-4ecd-aba3-e47fa68d343b",
+              "idQuestion": "fac7e6a8-2a5a-46c2-b835-2c0548638fd7",
+              "textAnswer": "Ответ3"
+            },
+            {
+              "id": "cf34bed3-ce64-4d6f-9787-a13291871f52",
+              "idQuestion": "fac7e6a8-2a5a-46c2-b835-2c0548638fd7",
+              "textAnswer": "Ответ4"
+            }
+          ],
+          "correctAnswerId": [
+            "4be30ae7-1576-4450-92da-60c5a12b27e2"
+          ],
+          "textQuestion": "Вопрос4"
+        },
+        {
+          "id": "0e5422f9-7c2a-4735-9deb-507ebbf9e014",
+          "allAnswer": [
+            {
+              "id": "3492ccec-2730-444c-a302-581241a168ca",
+              "idQuestion": "0e5422f9-7c2a-4735-9deb-507ebbf9e014",
+              "textAnswer": "Ответ1"
+            },
+            {
+              "id": "4f39ecbf-4505-4383-a14d-47b65c19e685",
+              "idQuestion": "0e5422f9-7c2a-4735-9deb-507ebbf9e014",
+              "textAnswer": "Ответ2"
+            },
+            {
+              "id": "755bee9a-a88e-467c-a8d8-b79aa35532cb",
+              "idQuestion": "0e5422f9-7c2a-4735-9deb-507ebbf9e014",
+              "textAnswer": "Ответ3"
+            },
+            {
+              "id": "5648f245-4653-41ed-b3b0-3a461a363a07",
+              "idQuestion": "0e5422f9-7c2a-4735-9deb-507ebbf9e014",
+              "textAnswer": "Ответ4"
+            }
+          ],
+          "correctAnswerId": [
+            "3492ccec-2730-444c-a302-581241a168ca",
+            "4f39ecbf-4505-4383-a14d-47b65c19e685"
+          ],
+          "textQuestion": "Вопрос5"
+        }
+      ]
     }
   ],
   "topicsOfStudy": [
@@ -984,6 +1146,17 @@
       "pictureTopicUrl": "cafe-poster.jpeg",
       "videoUrl": "third-class.mp4",
       "role": "manager"
+    },
+    {
+      "id": "7fc95763-ad7b-430c-8ded-29d77c0d9dc9",
+      "descriptionTopic": "В этой теме познаются азы администрирования",
+      "passedTopic": false,
+      "titleTopic": "Основы администрирования",
+      "numberTopic": 7,
+      "relatedQuestionsId": "5cca50e9-db98-412a-b0dc-59b742cac935",
+      "pictureTopicUrl": "react-poster.png",
+      "videoUrl": "tor-4-video.mp4",
+      "role": "administrator"
     }
   ]
 }

@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import styles from './Header.module.scss';
-import Logo from './Logo/Logo';
 import NavBar from './NavBar/NavBar';
 
 interface IHeaderProps {

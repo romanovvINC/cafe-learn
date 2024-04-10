@@ -16,7 +16,7 @@
     align-items: center;
     padding-right: 30px;
     padding-top: 30px;
-    border-right: 6px solid #000;
+    border-right: 6px solid #202020;
     height: 700px;
 
     .img {
@@ -27,11 +27,13 @@
     .title {
       font-size: 30px;
       margin: 0;
+      padding-bottom: 12px;
       min-height: 38px;
+      border-bottom: 3px solid white;
     }
 
     .role {
-      margin-top: 32px;
+      margin-top: 12px;
       font-size: 24px;
       > span {
         color: orange;
@@ -60,12 +62,85 @@
       }
 
       .field {
+        outline: none;
+        resize: none;
+        outline-offset: 0;
+        background-color: $black;
+        border: 0;
         width: 400px;
+        padding: 12px;
+        color: white;
+        font-size: 24px;
       }
     }
 
-    .btn {
+    .savgeBtn {
       align-self: flex-end;
+      font-size: 32px;
+      border: none;
+      border-radius: 4px;
+      padding: 6px 12px;
+      font-weight: 700;
+      background-color: $orange;
     }
+  }
+}
+
+.fileImage {
+  outline: none;
+  outline-offset: 0;
+  width: 290px;
+  height: 290px;
+
+  >input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  .backgroundFileSpan {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+  }
+
+  .loadedImage {
+    z-index: 100;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .fileImage {
+    &:hover {
+      border: 8px solid white;
+      background-position: -205px -5px;
+    }
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #ffffff;
+    text-align: center;
+    background-size: 400px 200px;
+    line-height: 22px;
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 12px;
+    margin: 0;
+    transition: background-color 0.2s;
   }
 }

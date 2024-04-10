@@ -3,64 +3,23 @@
 .profileHeader {
   position: relative;
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto;
   column-gap: 40px;
   padding-left: 40px;
   padding-right: 40px;
   max-width: 1440px;
   color: white;
-  margin-bottom: 6px;
-
-  @media (max-width: $tabletWidth) {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-bottom: 6px;
-  }
-
-  @media (max-width: 800px) {
-    width: 640px;
-  }
-
-  @media (max-width: 600px) {
-    width: 460px;
-    margin-bottom: 20px;
-    justify-content: center;
-    column-gap: 0;
-  }
-
-  @media (max-width: $mobileOnlyWidth) {
-    width: 380px;
-    padding: 0 10px;
-    margin-bottom: 50px;
-  }
 
   .title {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 0;
-
-    @media (max-width: 1050px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 600px) {
-      font-size: 34px;
-    }
   }
 
   .containerLink {
     display: flex;
     margin-top: 10px;
     column-gap: 40px;
-
-    @media (max-width: 1050px) {
-      margin-top: 7px;
-    }
-
-    @media (max-width: 800px) {
-      display: none;
-    }
 
     .link {
       position: relative;
@@ -85,12 +44,6 @@
         left: 0;
         -moz--transition: width 0.3s ease-in-out;
         transition: width 0.3s ease-in-out;
-
-        @media (max-width: 800px) {
-          >span {
-            display: none;
-          }
-        }
       }
 
       &:hover {
@@ -98,20 +51,6 @@
 
         &::after {
           width: 100%;
-        }
-      }
-
-      @media (max-width: 1050px) {
-        font-size: 24px;
-      }
-
-      @media (max-width: 800px) {
-        width: 64px;
-        height: 64px;
-        background-color: transparent;
-
-        >span {
-          display: none;
         }
       }
     }
@@ -125,10 +64,6 @@
         position: absolute;
         bottom: -2px;
         left: 0;
-
-        @media (max-width: 800px) {
-          display: none;
-        }
       }
     }
 
@@ -141,10 +76,6 @@
         position: absolute;
         bottom: -2px;
         left: 0;
-
-        @media (max-width: 800px) {
-          display: none;
-        }
       }
     }
   }

@@ -1,66 +1,27 @@
 @import "../../../styles/variables.scss";
 
 .containerFooter {
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 168px);
 
-  @media (max-width: 1440px) {
-    min-height: calc(100vh - 145px);
-  }
-
-  @media (max-width: $tabletWidth) {
-    padding-top: 120px;
-    min-height: 100vh;
-  }
-
   .containerTopicsReact {
     .topicsReact {
       position: relative;
-      margin: 0 auto;
+      margin: 0 auto 50px;
       padding-left: 40px;
       padding-right: 40px;
       max-width: 1440px;
       color: white;
-      margin-bottom: 50px;
       min-height: 575px;
-
-      @media (max-width: 1050px) {
-        min-height: 564px;
-      }
-
-      @media (max-width: $tabletWidth) {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 20px;
-        margin-bottom: 50px;
-      }
-
-      @media (max-width: 800px) {
-        width: 640px;
-      }
-
-      @media (max-width: 600px) {
-        width: 460px;
-        min-height: 554px;
-      }
-
-      @media (max-width: $mobileOnlyWidth) {
-        width: 380px;
-      }
 
       .title {
         font-size: 40px;
         text-align: center;
         margin-top: 0;
-
-        @media (max-width: 1050px) {
-          font-size: 34px;
-        }
-
-        @media (max-width: 600px) {
-          font-size: 28px;
-        }
+        padding-bottom: 16px;
+        border-bottom: 6px solid #202020;
       }
     }
   }
@@ -70,18 +31,27 @@
   }
 }
 
-.loadingAnimation {
-  animation: loading-animation 0.4s forwards;
+.topicPreview {
+  width: 300px;
+  height: 200px;
 }
 
-@keyframes loading-animation {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
+.topicLink {
+  padding: 8px;
+  font-size: 24px;
+  color: black;
+  font-weight: 800;
+  border-radius: 8px;
+  background-color: orange;
+}
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+.topicsContainer {
+  .topicElement {
+    padding-bottom: 32px;
+    border-bottom: 3px solid #202020;
   }
+}
+
+.description {
+  font-size: 24px;
 }

@@ -14,6 +14,8 @@ import {useActions} from "../../../../hooks/useActions";
 import {MyToast} from "../../../ui/MyToast/MyToast";
 import {IUserImproveSkills} from "../../../../store/auth/auth.interface";
 
+const userImage = require('../../../../assets/img/author-img.png');
+
 const ProfileStatistics = () => {
   const [averageUserScores, setAverageUserScores] = useState<IStatUser[]>([]);
   const [currentUser, setCurrentUser] = useState<IUser>();
@@ -51,7 +53,8 @@ const ProfileStatistics = () => {
 
   const handleImproveSkill = () => {
     if (user) {
-      if (Number(getAverageScore(averageUserScores)) < 4.5) {
+      const score = Number(getAverageScore(averageUserScores))
+      if (score < 4.5 || isNaN(score)) {
         MyToast('Средняя оценка должна быть от 4.5', false);
         return;
       }
@@ -68,7 +71,7 @@ const ProfileStatistics = () => {
           className={styles.img}
           width={290}
           height={290}
-          src={'../../../../assets/img/author-img.png'}
+          src={userImage}
           alt="Фото пользователя."
         />
         <h2
@@ -116,7 +119,7 @@ const ProfileStatistics = () => {
                         </div>
                       <div className={styles.barValue}
                       >
-                        {`${statData.value}`}
+                        {`${statData.value}`} / 5
                       </div>
                     </div>
                 );

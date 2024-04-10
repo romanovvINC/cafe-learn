@@ -9,7 +9,7 @@ const initialState: IInitialStateAuth = {
   error: '',
   user: getStoreLocal<IUserState>('user'),
 };
-
+// @ts-ignore
 export const authSlice = createSlice<IInitialStateAuth>({
   name: 'auth',
   initialState,

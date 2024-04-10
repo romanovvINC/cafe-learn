@@ -39,9 +39,9 @@ export const topicService = {
             titleTopic,
             numberTopic: allTopics.length + 1,
             relatedQuestionsId: testOfTopic.id,
-            pictureTopicUrl: 'react-poster.png',
-            videoUrl: 'tor-4-video.mp4',
-            role: role,
+            pictureTopicUrl: "cafe-poster.jpeg",
+            videoUrl: "first-class.mp4",
+            role,
         };
 
         await axiosPrivate.post<ITopic[]>(getAllTopics(), defaultTopic);

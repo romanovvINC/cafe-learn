@@ -19,29 +19,6 @@
   justify-content: center;
   transition: 1s ease-in-out;
   font-size: 120px;
-
-  @media (max-width: $tabletWidth) {
-    font-size: 85px;
-    max-width: $tabletWidth;
-  }
-
-  @media (max-width: 660px) {
-    font-size: 80px;
-    width: 105vw;
-    height: 110vh;
-  }
-
-  @media (max-width: 470px) {
-    font-size: 65px;
-    width: 110vw;
-    height: 110vh;
-  }
-
-  @media (max-width: 350px) {
-    font-size: 60px;
-    width: 110vw;
-    height: 110vh;
-  }
 }
 
 .modalActive {

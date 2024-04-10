@@ -1,8 +1,7 @@
 import { axiosPrivate } from '../../api/interceptors';
-import {getUserUrl, getUsersUrl, getAllTopics, getAllQuestions} from '../../constants/serverPath';
+import {getUserUrl, getUsersUrl, getAllTopics } from '../../constants/serverPath';
 import { IUser } from '../../types/userTypes';
 import {ITopic} from "../../types/topicTypes";
-import {ICurrentQuestion} from "../../types/questionTypes";
 
 const uuid = require('uuid');
 

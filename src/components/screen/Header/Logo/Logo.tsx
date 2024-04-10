@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './Logo.module.scss';
 
-const logo = require('../../../../assets/img/logo.jpg');
+const logo = require('../../../../assets/img/coffee-svgrepo-com.png');
 
 const Logo = () => (
   <Link className={styles.logo} to="/">

@@ -11,7 +11,6 @@ const TopicsReact = () => {
     topicsData, userData, topicsLoading, userLoading,
   } = useTopicsReact(user?.id || '');
   const [sortAllTopics, setSortAllTopics] = useState<ITopic[]>([]);
-  console.log(topicsData);
   useEffect(() => {
     if (topicsData && userData) {
       setSortAllTopics(topicsData.filter((topic) => topic.role === user?.role).sort((a, b) => a.numberTopic - b.numberTopic).map((topic) => {
@@ -29,19 +28,20 @@ const TopicsReact = () => {
   return (
     <div className={styles.containerFooter}>
       <div className={styles.containerTopicsReact}>
-        <div className={styles.topicsReact}>
           {!topicsLoading && topicsData
           && (
-          <div className={styles.loadingAnimation}>
+          <div className={styles.topicsReact}>
             {sortAllTopics.length === 0 ? <h1 className={styles.title}>Курсы не найдены</h1> : <h1 className={styles.title}>Курсы</h1>}
-            <div>
+            <div className={styles.topicsContainer}>
               {
-                sortAllTopics.map((topic) => {
+                sortAllTopics.map((topic, key) => {
+                  const topicImage = require(`../../../assets/img/${topic.pictureTopicUrl}`);
                   return (
-                      <div>
-                        <h1>{topic.titleTopic}</h1>
-                        <p>{topic.descriptionTopic}</p>
-                        <Link to={`${topic.id}`}>Перейти</Link>
+                      <div className={styles.topicElement}>
+                        <h1>#{key + 1} {topic.titleTopic}</h1>
+                        <img src={topicImage} alt='topic preview' className={styles.topicPreview}/>
+                        <p className={styles.description}>{topic.descriptionTopic}</p>
+                        <Link to={`${topic.id}`} className={styles.topicLink}>Перейти</Link>
                       </div>
                   )
                 })
@@ -50,7 +50,6 @@ const TopicsReact = () => {
           </div>
           )}
         </div>
-      </div>
     </div>
   );
 };

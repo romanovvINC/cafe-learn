@@ -6,11 +6,12 @@ import {getFilledTests} from "../../../utils/getFilledTests";
 import {getAverageScore} from "../../../utils/getAverageScore";
 import {getUserAverageScore} from "../../../utils/getUserAverageScore";
 import {topicService} from "../../../service/topics/topics.service";
-import {IStatUser, IUser} from "../../../types/userTypes";
+import {IStatUser, IUser, role} from "../../../types/userTypes";
 import {ITopic} from "../../../types/topicTypes";
 import {useLocation} from "react-router-dom";
 import {useAuth} from "../../../hooks/useAuth";
 import {getRoleComparison} from "../../../utils/getRoleComparison";
+import AdminCreateTopic from "./AdminCreateTopic/AdminCreateTopic";
 
 const Admin = () => {
     const [currentUsers, setCurrentUsers] = useState<IUser[]>([]);
@@ -59,7 +60,7 @@ const Admin = () => {
                                     <div
                                         className={styles.countContainer}
                                     >
-                                        <h3>Средний балл: {getAverageScore(getUserAverageScore(user, allTopics)) ?? 'Не проходил'}</h3>
+                                        <h3>Средний балл: {getAverageScore(getUserAverageScore(user, allTopics))}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -68,6 +69,7 @@ const Admin = () => {
                     })
                 }
             </div>
+            {user?.role === role.HR_MANAGER && AdminCreateTopic()}
         </div>
     );
 

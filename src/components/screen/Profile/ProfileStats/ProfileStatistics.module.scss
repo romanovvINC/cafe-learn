@@ -16,7 +16,7 @@
     align-items: center;
     padding-right: 30px;
     padding-top: 30px;
-    border-right: 6px solid #000;
+    border-right: 6px solid #202020;
     height: 700px;
 
     .img {
@@ -46,7 +46,7 @@
   }
 
   .userStatistics {
-    padding-top: 60px;
+    padding-top: 32px;
     width: 60%;
     padding-right: 20px;
 
@@ -127,7 +127,6 @@
   height: 60px;
   display: flex;
   align-items: center;
-  margin-top: 30px;
 }
 .statTableContainer {
   justify-content: center;

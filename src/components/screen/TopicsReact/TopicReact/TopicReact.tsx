@@ -70,7 +70,7 @@ const TopicReact = () => {
     <div className={styles.topicReact}>
       {!isLoadingAllTopics && !isLoadingCurrentTopic && currentTopic && allTopics && isAnimation
       && (
-      <div className={cn(styles.loadingAnimation)}>
+      <div>
         <h1 className={styles.title}>
           #
           {currentTopic.numberTopic}
